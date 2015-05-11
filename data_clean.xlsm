@@ -1,0 +1,36 @@
+Sub data_balance()
+'
+' data_balance Macro
+' gets the bookings data onto the same scale
+'
+' Keyboard Shortcut: Ctrl+b
+'
+'variable declaration
+Dim bookings As Integer
+Dim i As Integer
+Dim finished As Integer
+'Integer overflows so I need to use a Long
+Dim Thursday As Long
+Dim Friday As Long
+Dim Saturday As Long
+Dim Sunday As Long
+Dim Monday As Long
+Dim Tuesday As Long
+Dim Wednesday As Long
+Dim Counter As Integer
+Dim bookings_column As Integer
+Dim bookings_row As Integer
+'variable initialization
+Thursday = 0
+Friday = 0
+Saturday = 0
+Sunday = 0
+Monday = 0
+Tuesday = 0
+Wednesday = 0
+'fifteen iterations of 7 days each
+finished = 10
+'column # with bookings
+bookings_column = 2
+bookings_row = 1
+End
