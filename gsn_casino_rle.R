@@ -15,7 +15,7 @@ runs2
 
 set.seed(1237)
 m = 10000; n = 1:m; x = numeric(m); x[1] = 0 #start with a below average bookings day
-alpha =.39999999 ; beta = 0.795454545
+alpha =0.795454545 ; beta = .39999999
 # Simulation
 for (i in 2:m)
 {
@@ -45,6 +45,7 @@ repeat    #equivalent of a do while loop, breaks when there are no more runs of 
   run_of_negative_days = run_of_negative_days + length_vector[i]
   i = i+2
 }
+run_of_negative_days
 average_negative_run = run_of_negative_days / (length(length_vector)/2) 
 average_negative_run
 
@@ -60,4 +61,5 @@ repeat
   i = i+2
 }
 run_of_positive_days
-average_positive_run = run_of_positive_days/625 (length(length_vector)/2)
+average_positive_run = run_of_positive_days/ (length(length_vector)/2)
+average_positive_run
